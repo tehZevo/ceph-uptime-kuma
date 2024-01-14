@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+
+  ceph-kuma:
+    build: .
+    environment:
+      CEPH_USERNAME: "ceph-username"
+      CEPH_PASSWORD: "ceph-password"
+      CEPH_HOST: "https://ceph-dashboard:8443"
+      KUMA_HOST: "http://uptime-kuma:3001"
+      CEPH_OSD_KEY: "aabbccddee"
+      CEPH_HEALTH_KEY: "ffgghhiijj"
